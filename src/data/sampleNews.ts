@@ -6,7 +6,7 @@ import img5 from '@/assets/BlogImage/5.png';
 import img6 from '@/assets/BlogImage/6.png';
 import img7 from '@/assets/BlogImage/7.png';
 import img8 from '@/assets/BlogImage/8.png';
-import img9 from '@/assets/BlogImage/9.png';
+import img9 from '@/assets/BlogImage/9.jpeg';
 import img10 from '@/assets/BlogImage/10.png';
 import img11 from '@/assets/BlogImage/11.png';
 import img12 from '@/assets/BlogImage/12.png';
@@ -310,35 +310,36 @@ export const sampleNews: NewsArticle[] = [
   },
   {
     id: '9',
-    title:
-      'DUCSU Member Rafia’s Mymensingh Home Targeted with Crude Bomb Attack',
-    slug: 'ducsu-member-rafia-mymensingh-home-crude-bomb-attack',
+    title: 'Zaima Rahman Makes First Public Appearance in BNP Meeting',
+    slug: 'zaima-rahman-first-appearance-bnp-meeting-tarique-daughter',
     excerpt:
-      'The family home of DUCSU member Umma Uswatun Rafia in Mymensingh was attacked with a crude bomb in the early hours of Wednesday, leaving burn marks on the gate and raising serious security concerns for the student leader’s family.',
+      'Barrister Zaima Rahman, daughter of BNP Acting Chairman Tarique Rahman, virtually joined an expatriate BNP leaders’ meeting on Sunday — her first-ever public appearance in a party setting — in a 39-second clip that has since gone viral.',
     content:
-      'A crude bomb explosion occurred early Wednesday at the home of Umma Uswatun Rafia, a member of the Dhaka University Central Students’ Union (DUCSU), in Mymensingh. The blast took place around 3:00 am in the city’s Dholadia area.\n\n' +
-      'Police visited the scene at noon on Thursday after receiving information about the incident. A case was filed later in the afternoon at the local police station against unidentified perpetrators.\n\n' +
-      'Rafia’s family resides in the four-storey house, where her grandmother, mother, brother and several tenants also live. Her mother, Jinnat Mahal, said the explosion took place at 2:55 am when unidentified attackers detonated a crude bomb at the main gate of their house. Residents heard a loud blast, and burn marks were later found on several parts of the gate.\n\n' +
-      '“I have no enmity with anyone. Since my daughter is a DUCSU leader, this incident happened because of her activities. We now feel unsafe,” Jinnat Mahal said.\n\n' +
-      'Around 2:00 pm on Thursday, Mymensingh Superintendent of Police Kazi Akhtar-ul-Alam and other officials inspected the location.\n\n' +
-      'Later in the afternoon, Rafia’s brother, Khandakar Julkarnain, submitted a written complaint to Kotwali Model Police Station, which was registered as a case under the Explosives Act. The complaint states that unknown assailants detonated an explosive device and attempted to set fire to the house using kerosene and petrol, with the intent to cause harm and spread fear.\n\n' +
-      'Kotwali Model Police Station Officer-in-Charge Md Shibirul Islam confirmed that a case has been filed and efforts are underway to identify and arrest those responsible.',
-    category: 'Crime',
+      'Barrister Zaima Rahman, daughter of BNP acting chairman Tarique Rahman, virtually joined a party meeting on Sunday, marking her first public appearance in such a setting.\n\n' +
+      'A short video of Zaima participating in an online meeting of expatriate BNP leaders has since gone viral on social media.\n\n' +
+      'The meeting, attended by BNP leaders based abroad along with a European representatives’ team, focused on expatriate voting activities.\n\n' +
+      'In the 39-second clip, Zaima—who has until now stayed away from formal political involvement—was seen thanking participants.\n\n' +
+      '“Thank you, everyone. Thank you for coming and for all the work you have done. You have shared your thoughts — the problems and the advantages. A few issues have been discussed. Rizvi uncle has taken notes, Pavel uncle too. We will see centrally how much we can do,” she said.\n\n' +
+      '“The work must move forward. Everyone is in touch with each other and should help in every possible way. Khokon uncle explained well how things should be done according to time. We should not delay. We should prioritise and work according to the schedule. Thank you so much,” Zaima added.\n\n' +
+      'BNP Media Cell member Atikur Rahman Rumi told UNB that although Zaima joined the meeting and spoke, the video was not released officially. He said someone recorded the clip secretly and uploaded it online.\n\n' +
+      'This is the first time Zaima has appeared in a BNP organizational meeting linked to expatriate voting activities.',
+    category: 'Politics',
     subcategory: 'Politics',
-    author: 'Staff Correspondent',
-    publishedAt: '2025-11-20T14:00:00Z',
+    author: 'Correspondent, Politics & Governance',
+    publishedAt: '2025-11-30T10:00:00Z',
     imageUrl: img9,
     isBreaking: false,
     isFeatured: true,
     isEditorPick: false,
-    views: 15682,
+    views: 41289,
     tags: [
-      'DUCSU',
-      'student politics',
-      'crude bomb',
-      'Mymensingh',
-      'attack',
-      'security threat',
+      'Zaima Rahman',
+      'Tarique Rahman',
+      'BNP',
+      'expatriate voting',
+      'virtual meeting',
+      'next generation',
+      'Bangladesh politics',
     ],
   },
   {
