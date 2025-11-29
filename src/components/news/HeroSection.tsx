@@ -12,7 +12,16 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
   // allow parent to provide pre-rendered slide elements as children
   const childSlides = React.Children.toArray(children);
 
-  const featured = articles[0];
+  // Find the article with isHeroFeatured true for the main featured section
+  const heroFeaturedArticle = articles.find(article => article.isHeroFeatured);
+
+  // Get other articles excluding the hero featured one to avoid duplicates
+  const otherArticles = articles.filter(article => !article.isHeroFeatured);
+
+  // Distribute articles to different sections (10 unique articles total)
+  const leftSidebarArticles = otherArticles.slice(0, 4); // 4 articles
+  const rightSidebarArticles = otherArticles.slice(4, 6); // 2 articles
+  const secondaryFeaturesArticles = otherArticles.slice(6, 9); // 3 articles
 
   const formattedDate = (dateString: string) =>
     new Date(dateString).toLocaleDateString('en-US', {
@@ -30,63 +39,66 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
         {/* Left Sidebar - Small News Items */}
         <div className="lg:col-span-2">
           <div className="space-y-4">
-            {[...articles.slice(1, 4), articles[10]].filter(Boolean).map(article => (
-              <Link
-                key={article.id}
-                to={`/article/${article.slug}`}
-                className="group block cursor-pointer"
-              >
-                <img
-                  src={article.imageUrl}
-                  alt={article.title}
-                  className="w-full aspect-video object-cover rounded-sm mb-2 group-hover:opacity-80 transition-opacity"
-                />
-                <h4 className="text-sm font-semibold line-clamp-2 group-hover:text-primary transition-colors">
-                  {article.title}
-                </h4>
-              </Link>
-            ))}
+            {leftSidebarArticles
+              .filter(Boolean)
+              .map(article => (
+                <Link
+                  key={article.id}
+                  to={`/article/${article.slug}`}
+                  className="group block cursor-pointer"
+                >
+                  <img
+                    src={article.imageUrl}
+                    alt={article.title}
+                    className="w-full aspect-video object-cover rounded-sm mb-2 group-hover:opacity-80 transition-opacity"
+                  />
+                  <h4 className="text-sm font-semibold line-clamp-2 group-hover:text-primary transition-colors">
+                    {article.title}
+                  </h4>
+                </Link>
+              ))}
           </div>
         </div>
 
         {/* Center - Main Featured Article */}
+
         <div className="lg:col-span-7">
-          {featured ? (
-            <Link to={`/article/${featured.slug}`} className="group block">
+          {heroFeaturedArticle ? (
+            <Link to={`/article/${heroFeaturedArticle.slug}`} className="group block">
               <div className="relative mb-6 rounded-sm overflow-hidden">
                 <img
-                  src={featured.imageUrl}
-                  alt={featured.title}
+                  src={heroFeaturedArticle.imageUrl}
+                  alt={heroFeaturedArticle.title}
                   className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="space-y-4">
-                {featured.isBreaking && (
+                {heroFeaturedArticle.isBreaking && (
                   <span className="badge-breaking inline-block">
                     Breaking News
                   </span>
                 )}
-                {!featured.isBreaking && (
+                {!heroFeaturedArticle.isBreaking && (
                   <span className="bg-primary text-primary-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wider inline-block">
-                    {featured.subcategory || featured.category}
+                    {heroFeaturedArticle.subcategory || heroFeaturedArticle.category}
                   </span>
                 )}
                 <h1 className="text-3xl md:text-4xl font-headline font-bold leading-tight group-hover:text-primary transition-colors">
-                  {featured.title}
+                  {heroFeaturedArticle.title}
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed">
-                  {featured.excerpt}
+                  {heroFeaturedArticle.excerpt}
                 </p>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground pt-2">
                   <span className="flex items-center gap-1">
                     <Clock className="h-4 w-4" />
-                    {formattedDate(featured.publishedAt)}
+                    {formattedDate(heroFeaturedArticle.publishedAt)}
                   </span>
-                  <span>By {featured.author}</span>
-                  {/* {featured.views > 0 && (
+                  <span>By {heroFeaturedArticle.author}</span>
+                  {/* {heroFeaturedArticle.views > 0 && (
                     <span className="flex items-center gap-1">
                       <Eye className="h-4 w-4" />
-                      {formattedViews(featured.views)}
+                      {formattedViews(heroFeaturedArticle.views)}
                     </span>
                   )} */}
                 </div>
@@ -99,8 +111,8 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
 
         {/* Right Sidebar - Two clickable posts (fallback to ad placeholders) */}
         <div className="lg:col-span-3 space-y-6">
-          {articles && articles.length >= 6 ? (
-            articles.slice(4, 6).map(article => (
+          {rightSidebarArticles && rightSidebarArticles.length >= 2 ? (
+            rightSidebarArticles.map(article => (
               <Link
                 key={article.id}
                 to={`/article/${article.slug}`}
@@ -148,7 +160,7 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
 
       {/* Secondary Features Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {articles.slice(7, 10).map(article => (
+        {secondaryFeaturesArticles.map(article => (
           <Link
             key={article.id}
             to={`/article/${article.slug}`}

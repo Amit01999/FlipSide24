@@ -32,6 +32,15 @@ const ThreeColumnMixedRow = ({ items }: ThreeColumnMixedRowProps) => {
   const formattedViews = (views: number) =>
     views >= 1000 ? `${(views / 1000).toFixed(1)}k` : views.toString();
 
+  // Determine if category should be under features
+  const getCategoryPath = (slug: string) => {
+    const featuresCategories = ['culture', 'sports', 'cinema', 'literature', 'history'];
+    const normalizedSlug = slug.toLowerCase();
+    return featuresCategories.includes(normalizedSlug)
+      ? `/category/features/${slug}`
+      : `/category/${slug}`;
+  };
+
   return (
     <section className="py-8 border-t border-border">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -46,7 +55,7 @@ const ThreeColumnMixedRow = ({ items }: ThreeColumnMixedRowProps) => {
                 {category}
               </h3>
               <Link
-                to={`/category/${categorySlug}`}
+                to={getCategoryPath(categorySlug)}
                 className="flex items-center gap-1 text-xs font-medium text-primary hover:underline"
               >
                 More

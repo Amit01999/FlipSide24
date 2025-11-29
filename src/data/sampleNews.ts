@@ -49,6 +49,7 @@ export interface NewsArticle {
   isEditorPick?: boolean;
   views: number;
   tags: string[];
+  isHeroFeatured?: boolean;
 }
 
 export interface Category {
@@ -135,7 +136,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-28T06:00:00Z',
     imageUrl: img1,
     isBreaking: false,
-    isFeatured: false,
+    isFeatured: true,
     isEditorPick: false,
     views: 0,
     tags: ['expatriates', 'election', 'postal voting', 'Bangladesh', 'EC'],
@@ -154,7 +155,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-28T06:00:00Z',
     imageUrl: img2,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: false,
     views: 0,
     tags: ['earthquake', 'Narayanganj', 'RAJUK', 'IEB', 'disaster'],
@@ -172,7 +173,7 @@ export const sampleNews: NewsArticle[] = [
     author: 'Staff Correspondent',
     publishedAt: '2025-11-27T06:00:00Z',
     imageUrl: img3,
-    isBreaking: true,
+    isBreaking: false,
     isFeatured: false,
     isEditorPick: false,
     views: 0,
@@ -191,8 +192,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'Correspondent, Law and Justice',
     publishedAt: '2025-11-28T06:00:00Z',
     imageUrl: img4,
-    isBreaking: true,
-    isFeatured: false,
+    isBreaking: false,
+    isFeatured: true,
     isEditorPick: false,
     views: 0,
     tags: [
@@ -236,7 +237,7 @@ export const sampleNews: NewsArticle[] = [
     author: 'Staff Correspondent',
     publishedAt: '2025-11-26T06:00:00Z',
     imageUrl: img6,
-    isBreaking: false,
+    isBreaking: true,
     isFeatured: false,
     isEditorPick: false,
     views: 0,
@@ -262,8 +263,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'Correspondent, Politics and Governance',
     publishedAt: '2025-11-29T04:30:00Z',
     imageUrl: img7,
-    isBreaking: true,
-    isFeatured: false,
+    isBreaking: false,
+    isFeatured: true,
     isEditorPick: true,
     views: 12457,
     tags: [
@@ -295,7 +296,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-23T12:00:00Z',
     imageUrl: img8,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 28741,
     tags: [
@@ -362,7 +363,7 @@ export const sampleNews: NewsArticle[] = [
     author: 'Staff Correspondent',
     publishedAt: '2025-11-19T18:30:00Z',
     imageUrl: img10,
-    isBreaking: true,
+    isBreaking: false,
     isFeatured: true,
     isEditorPick: false,
     views: 34219,
@@ -395,8 +396,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'Court Correspondent',
     publishedAt: '2025-11-27T11:45:00Z',
     imageUrl: img11,
-    isBreaking: true,
-    isFeatured: true,
+    isBreaking: false,
+    isFeatured: false,
     isEditorPick: true,
     views: 41893,
     tags: [
@@ -464,7 +465,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-13T15:10:00Z',
     imageUrl: img13,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: false,
     views: 23456,
     tags: [
@@ -499,8 +500,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'International Desk',
     publishedAt: '2025-11-27T09:45:00Z',
     imageUrl: img14,
-    isBreaking: true,
-    isFeatured: true,
+    isBreaking: false,
+    isFeatured: false,
     isEditorPick: true,
     views: 51234,
     tags: [
@@ -536,8 +537,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'International Desk',
     publishedAt: '2025-11-26T10:00:00Z',
     imageUrl: img15,
-    isBreaking: true,
-    isFeatured: true,
+    isBreaking: false,
+    isFeatured: false,
     isEditorPick: true,
     views: 28945,
     tags: [
@@ -570,8 +571,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'International Desk',
     publishedAt: '2025-11-27T13:30:00Z',
     imageUrl: img16,
-    isBreaking: true,
-    isFeatured: true,
+    isBreaking: false,
+    isFeatured: false,
     isEditorPick: false,
     views: 18763,
     tags: [
@@ -639,7 +640,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-26T17:45:00Z',
     imageUrl: img18,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 15689,
     tags: [
@@ -669,8 +670,8 @@ export const sampleNews: NewsArticle[] = [
     author: 'Financial Correspondent',
     publishedAt: '2025-11-26T14:20:00Z',
     imageUrl: img19,
-    isBreaking: true,
-    isFeatured: true,
+    isBreaking: false,
+    isFeatured: false,
     isEditorPick: false,
     views: 22341,
     tags: [
@@ -777,7 +778,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T15:30:00Z',
     imageUrl: img22,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 67892,
     tags: [
@@ -818,7 +819,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T17:00:00Z',
     imageUrl: img23,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 34567,
     tags: [
@@ -858,7 +859,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T10:30:00Z',
     imageUrl: img24,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 27891,
     tags: [
@@ -898,7 +899,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T14:00:00Z',
     imageUrl: img25,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 31245,
     tags: [
@@ -939,7 +940,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T19:00:00Z',
     imageUrl: img26,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 29874,
     tags: [
@@ -979,7 +980,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T21:00:00Z',
     imageUrl: img27,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 36782,
     tags: [
@@ -1018,7 +1019,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T22:00:00Z',
     imageUrl: img28,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 41256,
     tags: [
@@ -1062,7 +1063,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T11:00:00Z',
     imageUrl: img29,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 23417,
     tags: [
@@ -1102,7 +1103,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T13:00:00Z',
     imageUrl: img30,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 18944,
     tags: [
@@ -1138,7 +1139,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T16:00:00Z',
     imageUrl: img31,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 26789,
     tags: [
@@ -1177,7 +1178,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T18:00:00Z',
     imageUrl: img32,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 31289,
     tags: [
@@ -1218,7 +1219,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-30T07:00:00Z',
     imageUrl: img33,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 52341,
     tags: [
@@ -1261,8 +1262,9 @@ export const sampleNews: NewsArticle[] = [
     author: 'Correspondent, Politics & Governance',
     publishedAt: '2025-11-29T21:30:00Z',
     imageUrl: img34,
-    isBreaking: true,
+    isBreaking: false,
     isFeatured: true,
+    isHeroFeatured: true,
     isEditorPick: true,
     views: 78945,
     tags: [
@@ -1300,7 +1302,7 @@ export const sampleNews: NewsArticle[] = [
     author: 'Correspondent, Politics & Governance',
     publishedAt: '2025-11-29T23:00:00Z',
     imageUrl: img35,
-    isBreaking: true,
+    isBreaking: false,
     isFeatured: true,
     isEditorPick: true,
     views: 65432,

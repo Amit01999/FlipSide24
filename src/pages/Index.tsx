@@ -24,6 +24,7 @@ interface CategoryGroup {
 
 const Index = () => {
   const featuredArticles = getFeaturedArticles();
+  console.log('Featured Articlessssssss:', featuredArticles);
   const editorPicks = getEditorPicks();
   const trendingArticles = getTrendingArticles();
 
