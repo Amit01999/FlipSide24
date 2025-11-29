@@ -16,7 +16,7 @@ const topPicksData: TopPickItem[] = [
     headline: '5yrs on, no building regulatory body yet',
     url: 'https://www.thedailystar.net/news/bangladesh/news/5yrs-no-building-regulatory-body-yet-4045971',
     imageUrl:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop',
+      'https://www.thedailystar.net/sites/default/files/styles/big_202/public/images/2025/11/29/building_0.jpg',
     source: 'The Daily Star',
   },
   {
@@ -25,15 +25,16 @@ const topPicksData: TopPickItem[] = [
       'Family planning activities in the country stagnant, population uncontrolled',
     url: 'https://www.prothomalo.com/bangladesh/8sentxw4tm',
     imageUrl:
-      'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400&h=250&fit=crop',
+      'https://media.prothomalo.com/prothomalo-bangla%2F2025-11-28%2Fx0wqmmk6%2FCapture.PNG?w=420&auto=format%2Ccompress&fmt=avif',
     source: 'Prothom Alo',
   },
   {
     id: 3,
-    headline: 'Election campaigning on billboards, new advertisement of discrimination',
+    headline:
+      'Election campaigning on billboards, new advertisement of discrimination',
     url: 'https://samakal.com/bangladesh/article/327410/%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%AC%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%A8%E0%A7%80-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A7%88%E0%A6%B7%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%AA%E0%A6%A8',
     imageUrl:
-      'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&h=250&fit=crop',
+      'https://samakal.com/media/imgAll/2025November/untitled-11-1764382522.jpg',
     source: 'Samakal',
   },
   {
@@ -41,7 +42,7 @@ const topPicksData: TopPickItem[] = [
     headline: 'Child marriage is very common in char villages',
     url: 'https://www.kalerkantho.com/print-edition/first-page/2025/11/29/1612621',
     imageUrl:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=250&fit=crop',
+      'https://asset.kalerkantho.com/public/news_images/2025/11/29/1764353029-124790c614cb125661da90aef325e798.jpg',
     source: 'Kaler Kantho',
   },
   {
@@ -49,7 +50,7 @@ const topPicksData: TopPickItem[] = [
     headline: 'Flawed fuel and power policies cause major pressure on economy',
     url: 'https://bonikbarta.com/bangladesh/zKKQROa0IQChWGDE',
     imageUrl:
-      'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=250&fit=crop',
+      'https://static.bonikbarta.com/original_images/Untitled-1_p2zHThy.jpg',
     source: 'Bonik Barta',
   },
   {
@@ -57,15 +58,14 @@ const topPicksData: TopPickItem[] = [
     headline: 'Four electoral alliances becoming visible this very week',
     url: 'https://www.dainikamadershomoy.com/details/019acb92aef91',
     imageUrl:
-      'https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=400&h=250&fit=crop',
+      'https://admin.dainikamadershomoy.com/images/large/2025/11/28/news_1764351978450.webp',
     source: 'Dainik Amadershomoy',
   },
   {
     id: 7,
     headline: 'Timber smuggling under the cover of land permits',
     url: 'https://www.ajkerpatrika.com/bangladesh/bandarban/ajpjif93mitdt',
-    imageUrl:
-      'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=400&h=250&fit=crop',
+    imageUrl: 'https://images.ajkerpatrika.com/original_images/tree-cution.jpg',
     source: 'Ajker Patrika',
   },
   {
@@ -73,7 +73,7 @@ const topPicksData: TopPickItem[] = [
     headline: 'The struggle for life in the ruins',
     url: 'https://www.jugantor.com/tp-firstpage/1034711',
     imageUrl:
-      'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=250&fit=crop',
+      'https://cdn.jugantor.com/assets/news_photos/2025/11/29/2-6929fe5c1efc6.jpg',
     source: 'Jugantor',
   },
   {
@@ -81,7 +81,7 @@ const topPicksData: TopPickItem[] = [
     headline: "Dhaka air 'unhealthy' despite joint efforts",
     url: 'https://www.newagebd.net/post/environment-climate-change/283572/dhaka-air-unhealthy-despite-joint-efforts',
     imageUrl:
-      'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=250&fit=crop',
+      'https://outspoken.newagebd.com/files/img/202511/9644cf003fb4a145ffd2d8c3a658bdcd.jpg',
     source: 'New Age Bangladesh',
   },
   {
@@ -90,7 +90,7 @@ const topPicksData: TopPickItem[] = [
       "Rammala Library: Inside Bangladesh's century-old archive of books, rare manuscripts",
     url: 'https://www.tbsnews.net/features/panorama/rammala-library-inside-bangladeshs-century-old-archive-books-rare-manuscripts',
     imageUrl:
-      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=400&h=250&fit=crop',
+      'https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2025/11/29/mhn_0645.jpg',
     source: 'The Business Standard',
   },
   {

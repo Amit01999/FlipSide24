@@ -64,7 +64,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>FlipSide24 - Bangladesh's Independent News Platform</title>
+        <title>FlipSide24 - The Other Side Of The News</title>
         <meta
           name="description"
           content="FlipSide24 delivers accurate, unbiased news coverage from Bangladesh and around the world. Breaking news, exclusive investigations, fact-checks, and in-depth analysis."
