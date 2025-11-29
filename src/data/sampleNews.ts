@@ -152,7 +152,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-28T06:00:00Z',
     imageUrl: img2,
     isBreaking: false,
-    isFeatured: false,
+    isFeatured: true,
     isEditorPick: false,
     views: 0,
     tags: ['earthquake', 'Narayanganj', 'RAJUK', 'IEB', 'disaster'],

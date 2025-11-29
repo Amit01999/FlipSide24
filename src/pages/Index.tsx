@@ -41,7 +41,7 @@ const Index = () => {
   const categoryGroups = useMemo(() => {
     const groups: Record<string, CategoryGroup> = {};
 
-    sampleNews.forEach((article) => {
+    sampleNews.forEach(article => {
       const category = article.category;
       const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
 
@@ -62,17 +62,14 @@ const Index = () => {
   }, []);
 
   // Separate categories by count
-  const categoriesWith3Plus = categoryGroups.filter((g) => g.count >= 3);
-  const categoriesWith2 = categoryGroups.filter((g) => g.count === 2);
-  const categoriesWith1 = categoryGroups.filter((g) => g.count === 1);
+  const categoriesWith3Plus = categoryGroups.filter(g => g.count >= 3);
+  const categoriesWith2 = categoryGroups.filter(g => g.count === 2);
+  const categoriesWith1 = categoryGroups.filter(g => g.count === 1);
 
   // Define layout variants for categories with 3+ news (for visual variety)
-  const layoutVariants: Array<"featured-left" | "grid-uniform" | "asymmetric" | "featured-top"> = [
-    "featured-left",
-    "grid-uniform",
-    "asymmetric",
-    "featured-top",
-  ];
+  const layoutVariants: Array<
+    'featured-left' | 'grid-uniform' | 'asymmetric' | 'featured-top'
+  > = ['featured-left', 'grid-uniform', 'asymmetric', 'featured-top'];
 
   return (
     <>
@@ -93,7 +90,7 @@ const Index = () => {
         <div className="container py-8">
           {/* Hero Section - Featured Articles */}
           <section className="mb-12">
-            <HeroSection articles={featuredArticles.slice(0, 6)} />
+            <HeroSection articles={featuredArticles.slice(0, 11)} />
           </section>
 
           {/* Main Content Grid */}
@@ -120,7 +117,7 @@ const Index = () => {
                   category={group.category}
                   categorySlug={group.categorySlug}
                   articles={group.articles}
-                  variant={index % 2 === 0 ? "horizontal" : "featured-small"}
+                  variant={index % 2 === 0 ? 'horizontal' : 'featured-small'}
                 />
               ))}
 
@@ -133,7 +130,7 @@ const Index = () => {
                   const endIndex = startIndex + 3;
                   const groupItems = categoriesWith1
                     .slice(startIndex, endIndex)
-                    .map((g) => ({
+                    .map(g => ({
                       category: g.category,
                       categorySlug: g.categorySlug,
                       article: g.articles[0],

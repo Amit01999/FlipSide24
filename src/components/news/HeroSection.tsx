@@ -30,7 +30,7 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
         {/* Left Sidebar - Small News Items */}
         <div className="lg:col-span-2">
           <div className="space-y-4">
-            {articles.slice(0, 4).map(article => (
+            {[...articles.slice(1, 4), articles[10]].filter(Boolean).map(article => (
               <Link
                 key={article.id}
                 to={`/article/${article.slug}`}
@@ -148,7 +148,7 @@ const HeroSection = ({ articles = [], children }: HeroSliderProps) => {
 
       {/* Secondary Features Row */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        {articles.slice(1, 4).map(article => (
+        {articles.slice(7, 10).map(article => (
           <Link
             key={article.id}
             to={`/article/${article.slug}`}
