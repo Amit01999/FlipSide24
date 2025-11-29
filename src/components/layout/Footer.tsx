@@ -16,16 +16,16 @@ import logo from '@/assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-slate-900 dark:bg-slate-950 text-white">
       {/* Newsletter Section */}
-      <div className="border-b border-background/20">
+      <div className="border-b border-white/20">
         <div className="container py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-headline font-bold mb-2">
                 Subscribe to Our Newsletter
               </h3>
-              <p className="text-background/70">
+              <p className="text-white/70">
                 Get the latest news delivered to your inbox
               </p>
             </div>
@@ -33,7 +33,7 @@ const Footer = () => {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-background/10 border-background/30 text-background placeholder:text-background/50 w-full md:w-64"
+                className="bg-white/10 border-white/30 text-white placeholder:text-white/50 w-full md:w-64"
               />
               <Button type="submit" className="bg-primary hover:bg-primary/90">
                 <Send className="h-4 w-4" />
@@ -52,7 +52,7 @@ const Footer = () => {
               <span className="text-primary">Flip</span>Side
               <span className="text-primary">24</span>
             </h2>
-            <p className="text-background/70 mb-4 text-sm leading-relaxed">
+            <p className="text-white/70 mb-4 text-sm leading-relaxed">
               FlipSide24 is a leading independent news platform delivering
               accurate, unbiased reporting from Bangladesh and around the world.
               We are committed to journalistic integrity and serving the public
@@ -63,7 +63,7 @@ const Footer = () => {
                 href="https://www.facebook.com/flipsidenews24"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-background/10 rounded hover:bg-primary transition-colors"
+                className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -71,7 +71,7 @@ const Footer = () => {
                 href="https://www.instagram.com/flipsidenews24?igsh=ZDZpemllaG5uZGFj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-background/10 rounded hover:bg-primary transition-colors"
+                className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -79,7 +79,7 @@ const Footer = () => {
                 href="https://www.youtube.com/@flipsidenews24/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-background/10 rounded hover:bg-primary transition-colors"
+                className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
               >
                 <Youtube className="h-5 w-5" />
               </a>
@@ -87,7 +87,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/flip-side-news-24/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-background/10 rounded hover:bg-primary transition-colors"
+                className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -104,7 +104,7 @@ const Footer = () => {
                 <li key={category.id}>
                   <Link
                     to={`/category/${category.slug}`}
-                    className="text-background/70 hover:text-primary transition-colors text-sm"
+                    className="text-white/70 hover:text-primary transition-colors text-sm"
                   >
                     {category.name}
                   </Link>
@@ -122,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   About Us
                 </Link>
@@ -130,7 +130,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   Contact Us
                 </Link>
@@ -138,7 +138,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/privacy-policy"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   Privacy Policy
                 </Link>
@@ -146,7 +146,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/terms"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   Terms & Conditions
                 </Link>
@@ -154,7 +154,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   Advertise With Us
                 </Link>
@@ -162,7 +162,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/careers"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-white/70 hover:text-primary transition-colors text-sm"
                 >
                   Careers
                 </Link>
@@ -178,7 +178,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-background/70">
+                <span className="text-white/70">
                   277/5, Elephant Road, Katabon Dhal, New Market, Dhaka 1205
                 </span>
               </li>
@@ -186,7 +186,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                 <a
                   href="tel:+8801887397002"
-                  className="text-background/70 hover:text-primary transition-colors"
+                  className="text-white/70 hover:text-primary transition-colors"
                 >
                   +880 1887 397002
                 </a>
@@ -195,7 +195,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                 <a
                   href="mailto:flipside24editor@gmail.com"
-                  className="text-background/70 hover:text-primary transition-colors"
+                  className="text-white/70 hover:text-primary transition-colors"
                 >
                   flipside24editor@gmail.com
                 </a>
@@ -206,15 +206,17 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-background/20">
+      <div className="border-t border-white/20">
         <div className="container py-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/60">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
             <p>© 2025 FlipSide24. All rights reserved.</p>
             <p>
               Developed By{' '}
               <a
                 className="text-xl font-headline font-bold mb-4 text-primary"
                 href="https://bepro.it.com/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 BeProIT
               </a>

@@ -31,6 +31,8 @@ import img30 from '@/assets/BlogImage/30.png';
 import img31 from '@/assets/BlogImage/31.png';
 import img32 from '@/assets/BlogImage/32.png';
 import img33 from '@/assets/BlogImage/33.png';
+import img34 from '@/assets/BlogImage/34.jpg';
+import img35 from '@/assets/BlogImage/35.jpeg';
 export interface NewsArticle {
   id: string;
   title: string;
@@ -86,8 +88,8 @@ export const categories: Category[] = [
   },
   {
     id: '4',
-    name: 'Monitoring',
-    slug: 'monitoring',
+    name: 'Top Pick',
+    slug: 'top-pick',
   },
   {
     id: '5',
@@ -696,8 +698,8 @@ export const sampleNews: NewsArticle[] = [
       'According to UNICEF, over 30,000 street children live in Dhaka, many working long hours and deprived of education, healthcare, and protection. NGOs like Dhaka Ahsania Mission, BRAC, and Save the Children work to help, but the need far outstrips resources.\n\n' +
       '“These children also face economic abuse—many are forced into labour or begging. They are often deprived of rights to shelter, safety, food and education, and are vulnerable to violence. As a society, we owe them protection and a chance to dream,” says Abdullah Al Mamun, Director for Child Protection and Child Rights Governance at Save the Children Bangladesh.\n\n' +
       'Each bouquet Razia sells is more than just flowers—it is a symbol of resilience, courage, and a quiet plea for a better future in a city that too often looks away.',
-    category: 'Red Flag',
-    subcategory: 'Rumour Scan',
+    category: 'Exclusive',
+    subcategory: 'Society',
     author: 'Taufiq Hossain',
     publishedAt: '2025-11-29T08:00:00Z',
     imageUrl: img20,
@@ -1191,41 +1193,126 @@ export const sampleNews: NewsArticle[] = [
   },
   {
     id: '33',
-    title: 'Razia: A Flower Seller and the Invisible Backbone of Dhaka',
-    slug: 'razia-flower-seller-moghbazar-street-child-dhaka',
+    title: 'Razia: The 12-Year-Old Flower Seller Holding Up Dhaka’s Heart',
+    slug: 'razia-flower-seller-moghbazar-dhaka-street-child-story',
     excerpt:
-      'Every morning in Moghbazar, twelve-year-old Razia balances a basket of marigolds on her head and sells hope one bouquet at a time. Her story is the story of thousands of street children whose childhood has been traded for survival.',
+      'Every dawn in Moghbazar, twelve-year-old Razia balances a basket of marigolds on her head and becomes the sole breadwinner for her family. Her quiet smile and fierce dignity expose the city’s greatest shame: thousands of stolen childhoods.',
     content:
-      'She appears at the traffic signal just as the morning sun turns the smog golden. A tiny girl in a faded frock, basket balanced perfectly on her head, voice soft but persistent: “Ful neben, apa? Ekdom taaza ful…”\n\n' +
-      'Razia is twelve. She should be learning multiplication tables or playing gollachhut during tiffin break. Instead, she is the sole breadwinner for herself and two younger siblings after their parents disappeared into the city’s underbelly of illness and poverty.\n\n' +
-      'By 6 a.m. she is at the wholesale flower market in Shahbag, bargaining with hardened middlemen twice her size. By 7:30 she is in Moghbazar, weaving between buses and CNGs, selling marigolds, roses, and tuberoses to office-goers buy for temples, lovers, or hospital visits.\n\n' +
-      'A good day earns her 300–400 taka. A bad day barely covers rice and dal. Some customers haggle over five taka; others silently slip an extra hundred into her palm. She remembers every face.\n\n' +
-      'What hurts most is not the heat or the hunger; it is the invisibility. To most of Dhaka, she is background noise, part of the city’s furniture like the stray dogs or the flickering streetlights. Yet without children like Razia, the city’s temples would have no offerings, its graves no flowers, its romances no tokens.\n\n' +
-      'She dreams in secret. “I want to wear a school uniform one day,” she whispers while tying a marigold garland. “White and navy blue, with a badge on the pocket.” The sentence ends with a shy laugh, as if the dream itself is too heavy to speak aloud.\n\n' +
-      'NGOs have reached out — BRAC, Dhaka Ahsania Mission, Save the Children run drop-in centres and night schools — but the pull of daily wages is stronger than the promise of distant certificates. One missed day of sales can mean no dinner.\n\n' +
-      'Razia is not asking for pity. She is asking for recognition: that her small hands keep parts of this city fragrant and alive; that her childhood has been sacrificed so the rest of us can rush to work without guilt; that her dignity, even in tatters, remains intact.\n\n' +
-      'The next time you buy flowers at a traffic signal, look — really look — at the child selling them. Behind the practiced smile and quick fingers is a girl who has never known recess, who measures success in kilograms of rice, who still believes school is possible if someone, anyone, will just make it possible.\n\n' +
-      'Razia is not just selling flowers. She is holding up a mirror to Dhaka, asking quietly but persistently:\n\n' +
-      'When will you finally see me?',
+      'The sun is barely up when Razia steps onto the chaotic streets of Moghbazar, a small figure in a faded salwar kameez, basket of fresh marigolds and tuberoses perfectly balanced on her head. At twelve years old, she is already an expert at weaving through honking buses, dodging rickshaws, and reading the moods of hurried commuters.\n\n' +
+      'To most of Dhaka, she is invisible — just another flower girl at the traffic signal. But look closer and you will see a child carrying the weight of an entire family on her narrow shoulders.\n\n' +
+      'Orphaned young and now guardian to two younger siblings, Razia starts her day at 5 a.m. in Shahbag wholesale market, bargaining with grown men for the freshest blooms. By 7 a.m. she is selling on the streets: “Apa, ful neben? Ekdom taaza…” Her voice is soft but persistent; every sale means rice on the table tonight.\n\n' +
+      'A good day brings 350 taka. A bad day means hunger. Some customers bargain ruthlessly over ten taka; others quietly press a 100-taka note into her hand and tell her to keep the change. She remembers every kind face.\n\n' +
+      'What hurts more than empty stomachs is the erasure. To the city rushing past, Razia is scenery — like the stray dogs or flickering neon signs. Yet without children like her, Dhaka’s temples would have no offerings, hospital rooms no flowers, lovers no tokens, graves no farewell garlands.\n\n' +
+      'Her dream is simple and painfully simple: “I want to wear a white-and-navy school uniform with a badge,” she says while tying a marigold mala, eyes shining for a moment before the weight of reality returns.\n\n' +
+      'NGOs run drop-in centres and night schools, but the pull of daily wages is stronger than distant promises. One missed morning of sales can mean no dinner for three small mouths.\n\n' +
+      'Razia is not asking for charity. She is asking to be seen.\n\n' +
+      'Seen as a child whose childhood was stolen.\n' +
+      'Seen as a girl whose dignity remains unbroken despite everything.\n' +
+      'Seen as proof that a society is only as civilised as the way it treats its most vulnerable.\n\n' +
+      'The next time you buy flowers at a traffic light, pause for a second. Look at the small hands offering them. Behind the practiced smile is a girl measuring her future in bunches of marigolds, still daring to believe that one day school bells will ring for her too.\n\n' +
+      'Until then, Razia keeps walking, keeps smiling, keeps selling hope one fragile petal at a time — the invisible backbone keeping parts of this merciless city fragrant and human.',
     category: 'Views',
     subcategory: 'Society',
     author: 'Akib Al Rashid',
-    publishedAt: '2025-11-29T20:00:00Z',
+    publishedAt: '2025-11-30T07:00:00Z',
     imageUrl: img33,
     isBreaking: false,
     isFeatured: true,
     isEditorPick: true,
-    views: 44567,
+    views: 52341,
     tags: [
+      'Razia',
       'street children',
       'child labour',
       'Dhaka',
       'Moghbazar',
       'flower seller',
       'poverty',
-      'human story',
       'child rights',
-      'urban Bangladesh',
+      'human story',
+      'urban resilience',
+    ],
+  },
+  {
+    id: '34',
+    title:
+      'Khaleda Zia’s Condition Extremely Critical Amid Worsening Health Complications',
+    slug: 'khaleda-zia-condition-critical-health-complications-hospital',
+    excerpt:
+      'BNP Chairperson and former Prime Minister Khaleda Zia, 79, remains in extremely critical condition at Evercare Hospital following severe respiratory distress from pneumonia, compounded by kidney, liver, arthritis, and diabetes issues; urgent transfer to Singapore under consideration.',
+    content:
+      'BNP Chairperson and former prime minister Khaleda Zia remains in an extremely critical condition as multiple health complications continue to worsen since she was admitted to hospital with severe respiratory distress caused by a lung infection which later developed into pneumonia.\n\n' +
+      'Doctors said the 79-year-old leader is also battling long-standing ailments, including kidney and liver complications, arthritis, and diabetes—conditions that are now interacting in ways that complicate treatment. “Treating one issue risks aggravating another,” a party leader said.\n\n' +
+      'Although she has been under intensive treatment for several days, BNP leaders claim that her condition has shown "no improvement" over the past 48 hours. Her medical team—comprised of local and foreign specialists—is reportedly considering urgent transfer to Singapore for advanced care, if her condition permits.\n\n' +
+      'Interim government Chief Adviser Prof Muhammad Yunus has expressed deep concern over Khaleda Zia’s deteriorating health. In a statement issued Friday evening by the Press Wing, he urged the nation to pray for her recovery and directed authorities to ensure all necessary medical support. He described the three-time former prime minister as “a source of profound inspiration for the nation,” saying her well-being is crucial during this period of democratic transition.\n\n' +
+      'BNP organized special prayers after Jummah prayers yesterday across mosques nationwide for her recovery.\n\n' +
+      'Khaleda Zia was rushed to Evercare Hospital last Sunday night after experiencing acute breathing difficulties. Following initial examinations, doctors admitted her for emergency treatment. As her condition worsened, she was transferred from the cabin block to the Coronary Care Unit (CCU) two days ago. She remains under round-the-clock observation by a multi-disciplinary medical board.\n\n' +
+      'Large numbers of BNP leaders and activists have continued gathering outside the hospital. Party’s Secretary General Mirza Fakhrul Islam Alamgir and Standing Committee member Amir Khasru Mahmud Chowdhury visited yesterday afternoon, though they did not enter the CCU due to infection risks. “We have spoken to the doctors. There has been no improvement,” Amir Khasru told reporters.\n\n' +
+      'Her elder son, BNP’s acting chairman Tarique Rahman, and daughter-in-law Dr Zubaida Rahman—who is also a member of the medical board—are monitoring her condition continuously from London. Her younger son Arafat Rahman Koko’s widow, Sharmila Rahman, remains at her bedside in Dhaka.\n\n' +
+      'Khaleda Zia, who has long suffered from chronic respiratory, cardiac, kidney, and liver issues, was jailed in two corruption cases during the previous Awami League government, spending over two years in prison. She was released in March 2020 under an executive order suspending her sentence, which was periodically extended every six months—though she was never permitted to travel abroad for treatment.\n\n' +
+      'Following the fall of the Awami League government during the July mass uprising, Khaleda Zia was fully freed. She travelled to the UK on January 8 for medical care and returned on May 6 after nearly four months.\n\n' +
+      'Prof FM Siddiqui, a member of her medical board, earlier told reporters that she had been suffering from recurrent infections for several months. Tests revealed a lung infection, compounded by pre-existing cardiac complications. “When both the heart and lungs are affected simultaneously, breathing becomes severely challenging,” he noted.\n\n' +
+      "Late Friday night, BNP leaders and supporters continued gathering outside Evercare Hospital. Around 11:38pm, Interim Government's Adviser for Law, Justice and Parliamentary Affairs, Prof Asif Nazrul, visited Khaleda Zia and left shortly after midnight. Senior BNP leaders, including Mirza Fakhrul and Abdul Moyeen Khan, also arrived at the hospital.\n\n" +
+      'Speaking briefly to journalists, Moyeen Khan said the medical board had reviewed her condition and was “taking all necessary measures.” He added that she remains under strict monitoring.\n\n' +
+      'Khaleda Zia had previously travelled to London on January 7 for advanced treatment and returned on May 6, after 117 days abroad. Since then, she required hospitalization multiple times due to recurring health crises.',
+    category: 'National',
+    subcategory: 'Politics',
+    author: 'Correspondent, Politics & Governance',
+    publishedAt: '2025-11-29T21:30:00Z',
+    imageUrl: img34,
+    isBreaking: true,
+    isFeatured: true,
+    isEditorPick: true,
+    views: 78945,
+    tags: [
+      'Khaleda Zia',
+      'BNP',
+      'health crisis',
+      'Evercare Hospital',
+      'pneumonia',
+      'interim government',
+      'Muhammad Yunus',
+      'Mirza Fakhrul',
+      'Tarique Rahman',
+    ],
+  },
+  {
+    id: '35',
+    title:
+      'Tarique Rahman: Return to Bangladesh Not Entirely in My Control Amid Mother’s Critical Illness',
+    slug: 'tarique-rahman-return-bangladesh-not-control-khaleda-zia-illness',
+    excerpt:
+      'From London, BNP Acting Chairman Tarique Rahman expressed his deep longing to return home to be by his critically ill mother Khaleda Zia’s side but stated that his return is not fully within his control due to political sensitivities, while thanking the nation and interim government for support.',
+    content:
+      'BNP Acting Chairman Tarique Rahman said that, like any child, he longs to be near his mother in such a crisis, but added that returning to Bangladesh is not entirely within his control.\n\n' +
+      '"But unlike others, the opportunity for me to make an independent decision in this regard is neither unrestricted nor solely within my control. The sensitivity of this matter also limits the scope for detailed explanation. Our family remains hopeful that once the current political realities reach the expected stage, my long and anxious wait to return to my homeland will finally come to an end," he wrote in a Facebook post this morning.\n\n' +
+      'He explained his situation in relation to returning to Bangladesh as his mother—former prime minister and BNP Chairperson Khaleda Zia—remains seriously ill and in a critical condition under intensive care at a hospital in Dhaka.\n\n' +
+      'Citizens from all walks of life, irrespective of political affiliation, have continued to offer earnest prayers for her recovery, he said in the post.\n\n' +
+      '"The honourable chief adviser has not only prayed for her healing but also expressed a commitment to ensuring every possible support for her treatment," he wrote.\n\n' +
+      'As always, medical teams at home and abroad have been providing highly professional and sincerely dedicated care, he said, adding several friendly nations have also expressed their willingness to extend all possible cooperation, including advanced medical support.\n\n' +
+      '"The Zia family conveys its heartfelt thanks and deep gratitude to everyone for their sincere prayers and affection for the highly respected Begum Khaleda Zia. At the same time, we earnestly request all to keep praying for her swift recovery," he added.\n\n' +
+      'Khaleda was admitted to Evercare Hospital on November 23 on the advice of her medical board after being diagnosed with infections in her heart and lungs.\n\n' +
+      "She is also suffering from pneumonia and is currently receiving treatment in the hospital's Coronary Care Unit (CCU) under the supervision of both local and foreign specialists.\n\n" +
+      'Khaleda, 80, has long been suffering from multiple health complications, including heart problems, liver and kidney issues, diabetes, lung problems, arthritis, and eye-related illnesses.',
+    category: 'Politics',
+    subcategory: 'Politics',
+    author: 'Correspondent, Politics & Governance',
+    publishedAt: '2025-11-29T23:00:00Z',
+    imageUrl: img35,
+    isBreaking: true,
+    isFeatured: true,
+    isEditorPick: true,
+    views: 65432,
+    tags: [
+      'Tarique Rahman',
+      'Khaleda Zia',
+      'BNP',
+      'health crisis',
+      'return to Bangladesh',
+      'interim government',
+      'Muhammad Yunus',
+      'political sensitivity',
+      'family statement',
     ],
   },
 ];

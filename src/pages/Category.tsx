@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Layout from '@/components/layout/Layout';
 import NewsCard from '@/components/news/NewsCard';
 import TrendingSidebar from '@/components/news/TrendingSidebar';
+import TopPick from '@/components/news/TopPick';
 import { categories, sampleNews, getTrendingArticles } from '@/data/sampleNews';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -316,6 +317,9 @@ const Category = () => {
             {/* Sidebar */}
             <aside className="lg:col-span-4 space-y-8">
               <TrendingSidebar articles={trendingArticles} />
+
+              {/* Top Picks */}
+              <TopPick />
 
               {/* Newsletter */}
               <div className="bg-primary text-primary-foreground rounded-sm p-6">

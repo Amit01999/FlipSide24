@@ -1,19 +1,22 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
-import ScrollToTop from "./components/layout/ScrollToTop";
-import Index from "./pages/Index";
-import Article from "./pages/Article";
-import Category from "./pages/Category";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import Admin from "./pages/Admin";
-import NotFound from "./pages/NotFound";
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as Sonner } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import ScrollToTop from './components/layout/ScrollToTop';
+import Index from './pages/Index';
+import Article from './pages/Article';
+import Category from './pages/Category';
+import Editorial from './pages/Editorial';
+import TopPickPage from './pages/TopPickPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Careers from './pages/Careers';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Admin from './pages/Admin';
+import NotFound from './pages/NotFound';
 
 const queryClient = new QueryClient();
 
@@ -29,10 +32,16 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/article/:slug" element={<Article />} />
             <Route path="/news/:slug" element={<Article />} />
+            <Route path="/category/editorial" element={<Editorial />} />
+            <Route path="/category/top-pick" element={<TopPickPage />} />
             <Route path="/category/:category" element={<Category />} />
-            <Route path="/category/:category/:subcategory" element={<Category />} />
+            <Route
+              path="/category/:category/:subcategory"
+              element={<Category />}
+            />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/admin" element={<Admin />} />

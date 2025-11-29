@@ -75,11 +75,11 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
         )}
       >
         {/* Top bar - Date and Social Icons */}
-        <div className="bg-foreground text-background">
+        <div className="bg-slate-900 dark:bg-slate-950 text-white">
           <div className="container flex items-center justify-between py-2 text-sm">
             <span className="hidden sm:block">{currentDate}</span>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-4">
                 <a
                   href="https://www.facebook.com/flipsidenews24"
                   target="_blank"
@@ -115,13 +115,13 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
               </div>
               <button
                 onClick={toggleDarkMode}
-                className="p-1 hover:text-primary transition-colors"
+                className="relative p-2 rounded-full bg-white/10 hover:bg-primary hover:scale-110 transition-all duration-300 group border border-white/20 hover:border-primary shadow-lg hover:shadow-primary/50"
                 aria-label="Toggle dark mode"
               >
                 {isDarkMode ? (
-                  <Sun className="h-4 w-4" />
+                  <Sun className="h-4 w-4 text-white group-hover:rotate-180 transition-transform duration-500" />
                 ) : (
-                  <Moon className="h-4 w-4" />
+                  <Moon className="h-4 w-4 text-white group-hover:rotate-12 transition-transform duration-300" />
                 )}
               </button>
             </div>
@@ -129,7 +129,7 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
         </div>
 
         {/* Large Centered Logo Section */}
-        <div className="bg-background border-b border-border">
+        <div className="bg-neutral-200 dark:bg-gray-400 border-b border-border">
           <div className="container py-2">
             <div className="flex flex-col items-center justify-center gap-4">
               {/* Large Logo - Centered */}
@@ -254,9 +254,7 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
                               </Link>
                             </DropdownMenuItem>
                             <DropdownMenuSeparator />
-                            <div className="px-2 py-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                              Subcategories
-                            </div>
+
                             {category.subcategories.map(sub => (
                               <DropdownMenuItem key={sub.slug} asChild>
                                 <Link

@@ -3,6 +3,7 @@ import Layout from '@/components/layout/Layout';
 import HeroSection from '@/components/news/HeroSection';
 import EditorsPicks from '@/components/news/EditorsPicks';
 import TrendingSidebar from '@/components/news/TrendingSidebar';
+import TopPick from '@/components/news/TopPick';
 import MultiNewsRow from '@/components/news/MultiNewsRow';
 import TwoNewsRow from '@/components/news/TwoNewsRow';
 import ThreeColumnMixedRow from '@/components/news/ThreeColumnMixedRow';
@@ -13,17 +14,6 @@ import {
   getTrendingArticles,
 } from '@/data/sampleNews';
 import { useMemo } from 'react';
-
-/**
- * FlipSide24 Homepage
- *
- * Premium news layout with intelligent category grouping:
- * - Categories with 3+ news: Full-width premium layout (MultiNewsRow)
- * - Categories with 2 news: 2-column editorial row (TwoNewsRow)
- * - Categories with 1 news: Grouped into 3-column mixed rows (ThreeColumnMixedRow)
- *
- * Design inspired by theace.global, dhakatribune.com, and bdnews24.com
- */
 
 interface CategoryGroup {
   category: string;
@@ -153,6 +143,9 @@ const Index = () => {
 
               {/* Trending Articles */}
               <TrendingSidebar articles={trendingArticles} />
+
+              {/* Top Picks */}
+              <TopPick />
 
               {/* Video Section Placeholder */}
               <div className="bg-card border border-border rounded-sm p-6 news-card-hover">

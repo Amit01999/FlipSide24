@@ -203,31 +203,34 @@ const Contact = () => {
                 <h3 className="font-semibold mb-4">Follow Us</h3>
                 <div className="flex gap-3">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/flipsidenews24"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-muted rounded-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Facebook className="h-5 w-5" />
                   </a>
+
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/flipsidenews24?igsh=ZDZpemllaG5uZGFj"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-muted rounded-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Instagram className="h-5 w-5" />
                   </a>
+
                   <a
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@flipsidenews24"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-muted rounded-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Youtube className="h-5 w-5" />
                   </a>
+
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/company/flip-side-news-24/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-muted rounded-sm flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"

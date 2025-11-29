@@ -1,6 +1,20 @@
-import { Helmet } from "react-helmet-async";
-import { Users, Target, Award, Globe } from "lucide-react";
-import Layout from "@/components/layout/Layout";
+import { Helmet } from 'react-helmet-async';
+import {
+  Eye,
+  Shield,
+  Users,
+  Lightbulb,
+  CheckCircle2,
+  Mail,
+  TrendingUp,
+  FileSearch,
+  Megaphone,
+  Scale,
+  Newspaper,
+  Target,
+  Search,
+} from 'lucide-react';
+import Layout from '@/components/layout/Layout';
 
 const About = () => {
   return (
@@ -9,149 +23,224 @@ const About = () => {
         <title>About Us | FlipSide24</title>
         <meta
           name="description"
-          content="Learn about FlipSide24, Bangladesh's independent news platform committed to accurate, unbiased journalism and serving the public interest."
+          content="FlipSide is an independent news and analysis platform revealing the other side of the story. Investigative journalism for policy, governance, and social justice in Bangladesh."
         />
         <link rel="canonical" href="https://flipside24.com/about" />
       </Helmet>
 
       <Layout>
-        <article className="container py-12">
-          {/* Hero Section */}
+        <article className="container py-12 md:py-20">
+          {/* Hero Section - Enhanced */}
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-headline font-bold mb-6">
-              About <span className="text-primary">FlipSide24</span>
+            <div className="inline-block mb-6">
+              <div className="flex items-center justify-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full">
+                <Eye className="w-5 h-5" />
+                <span className="font-semibold">Revealing the Other Side</span>
+              </div>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-headline font-bold mb-6">
+              About <span className="text-primary">FlipSide</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              An independent voice in Bangladesh's media landscape, committed to 
-              delivering accurate, unbiased news that empowers citizens and 
-              strengthens democratic discourse.
-            </p>
           </div>
 
-          {/* Mission & Vision */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-card border border-border p-8 rounded-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-4">
-                <Target className="h-6 w-6 text-primary" />
+          {/* Main Introduction */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-card border border-border rounded-lg p-8 md:p-10">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Newspaper className="h-7 w-7 text-primary-foreground" />
+                </div>
+                <div>
+                  <p className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
+                    Flipside is an independent news and analysis platform
+                    committed to revealing the other side of the story. In a
+                    world dominated by headlines, we go beyond the obvious to
+                    explore the deeper context, uncover hidden truths, and
+                    highlight perspectives often overlooked.
+                  </p>
+                </div>
               </div>
-              <h2 className="text-2xl font-headline font-bold mb-4">Our Mission</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To provide timely, accurate, and comprehensive news coverage that informs, 
-                educates, and empowers the people of Bangladesh. We are committed to 
-                upholding the highest standards of journalistic integrity while making 
-                quality journalism accessible to all.
-              </p>
-            </div>
-            <div className="bg-card border border-border p-8 rounded-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-4">
-                <Globe className="h-6 w-6 text-primary" />
-              </div>
-              <h2 className="text-2xl font-headline font-bold mb-4">Our Vision</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                To become the most trusted and respected news platform in Bangladesh, 
-                known for our investigative journalism, fact-based reporting, and 
-                commitment to holding power accountable. We envision a society where 
-                informed citizens drive positive change.
-              </p>
             </div>
           </div>
 
-          {/* Values */}
+          {/* Our Focus and Mission */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="bg-card border border-border rounded-lg p-8 md:p-10">
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Target className="h-7 w-7 text-primary-foreground" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-headline font-bold mb-4">
+                    Our Focus & Mission
+                  </h2>
+                  <p className="text-lg text-foreground leading-relaxed mb-4">
+                    We focus on policy, political power, governance, and social
+                    justice, delivering reporting that informs, investigates,
+                    and challenges the status quo.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed">
+                    Our mission is to provide citizens with the information they
+                    need to understand not just what is happening, but why it
+                    matters.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision - Fourth Estate */}
+          <div className="max-w-5xl mx-auto mb-20">
+            <div className="bg-foreground text-background rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                    <TrendingUp className="h-6 w-6 text-primary-foreground" />
+                  </div>
+                  <h2 className="text-3xl font-headline font-bold">
+                    True Fourth Estate
+                  </h2>
+                </div>
+                <p className="text-xl text-background/90 leading-relaxed mb-6">
+                  As a platform, we aspire to be a true{' '}
+                  <span className="text-primary font-semibold">
+                    Fourth Estate of Bangladesh
+                  </span>{' '}
+                  — independent, fearless, and accountable to the people.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex items-center gap-2 bg-background/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="font-medium">
+                      1971 Liberation Aspirations
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-background/10 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="font-medium">2024 Vision for Justice</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Beliefs */}
           <section className="mb-16">
-            <h2 className="text-3xl font-headline font-bold text-center mb-12 category-accent inline-block w-full">
-              Our Core Values
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">
+                We Believe in Journalism That{' '}
+                <span className="text-primary">Serves Society</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  title: "Truth & Accuracy",
-                  description: "We verify facts rigorously and correct errors promptly. Truth is the foundation of our journalism.",
+                  icon: Search,
+                  title: 'Investigative',
+                  description: 'Digging deep into issues that impact lives',
                 },
                 {
-                  title: "Independence",
-                  description: "We maintain editorial independence from political, commercial, and other interests that could compromise our reporting.",
+                  icon: Users,
+                  title: 'Inclusive',
+                  description: 'Amplifying voices often unheard',
                 },
                 {
-                  title: "Accountability",
-                  description: "We hold the powerful accountable and are ourselves accountable to our readers for our work.",
+                  icon: Lightbulb,
+                  title: 'Analytical',
+                  description:
+                    'Providing context, data, and insight beyond the headlines',
                 },
                 {
-                  title: "Fairness",
-                  description: "We present diverse perspectives and give voice to the voiceless, ensuring balanced coverage.",
+                  icon: Scale,
+                  title: 'Accountable',
+                  description: 'Holding power to account, across sectors',
                 },
-                {
-                  title: "Transparency",
-                  description: "We are open about our methods, corrections, and any potential conflicts of interest.",
-                },
-                {
-                  title: "Public Interest",
-                  description: "We serve the public interest above all else, providing news that matters to our community.",
-                },
-              ].map((value, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-sm flex items-center justify-center mx-auto mb-4 font-bold">
-                    {index + 1}
+              ].map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-headline font-bold mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-headline font-bold mb-2">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
-          {/* Team Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-headline font-bold text-center mb-12 category-accent inline-block w-full">
-              Our Leadership
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Mohammad Rahman",
-                  role: "Editor-in-Chief",
-                  bio: "25+ years of journalism experience across leading national dailies.",
-                },
-                {
-                  name: "Fatima Akter",
-                  role: "Managing Editor",
-                  bio: "Award-winning journalist specializing in investigative reporting.",
-                },
-                {
-                  name: "Kamal Hossain",
-                  role: "Head of Digital",
-                  bio: "Pioneer in digital journalism with expertise in multimedia storytelling.",
-                },
-              ].map((member, index) => (
-                <div key={index} className="bg-card border border-border p-6 rounded-sm text-center">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-12 w-12 text-muted-foreground" />
-                  </div>
-                  <h3 className="text-xl font-headline font-bold">{member.name}</h3>
-                  <p className="text-primary font-medium text-sm mb-2">{member.role}</p>
-                  <p className="text-muted-foreground text-sm">{member.bio}</p>
-                </div>
-              ))}
+          {/* Tagline Section */}
+          <div className="max-w-4xl mx-auto mb-20">
+            <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 border-l-4 border-primary rounded-xl p-8 md:p-10">
+              <div className="flex items-center gap-4 mb-4">
+                <Eye className="h-8 w-8 text-primary" />
+                <h3 className="text-3xl font-headline font-bold">FlipSide</h3>
+              </div>
+              <p className="text-2xl md:text-3xl font-medium text-foreground/90 italic">
+                We reveal the other side of the story.
+              </p>
             </div>
-          </section>
+          </div>
 
-          {/* Stats */}
-          <section className="bg-foreground text-background py-12 px-8 rounded-sm">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              {[
-                { number: "2M+", label: "Monthly Readers" },
-                { number: "500+", label: "Articles Published Monthly" },
-                { number: "50+", label: "Journalists & Contributors" },
-                { number: "8", label: "News Categories" },
-              ].map((stat, index) => (
-                <div key={index}>
-                  <div className="text-4xl md:text-5xl font-headline font-bold text-primary mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-background/70">{stat.label}</div>
-                </div>
-              ))}
+          {/* Contact Section */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-card border border-border rounded-2xl p-8 md:p-10 text-center shadow-lg">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Mail className="h-8 w-8 text-primary" />
+              </div>
+              <h2 className="text-2xl font-headline font-bold mb-3">
+                Get in Touch
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Have a story tip or want to reach our editorial team?
+              </p>
+              <a
+                href="mailto:flipside24editor@gmail.com"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+                flipside24editor@gmail.com
+              </a>
             </div>
-          </section>
+          </div>
+
+          {/* Values Footer */}
+          <div className="max-w-5xl mx-auto mt-20 pt-12 border-t border-border">
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-headline font-bold text-primary mb-2">
+                  Independent
+                </div>
+                <p className="text-muted-foreground">Fearless journalism</p>
+              </div>
+              <div>
+                <div className="text-4xl font-headline font-bold text-primary mb-2">
+                  Accountable
+                </div>
+                <p className="text-muted-foreground">To the people</p>
+              </div>
+              <div>
+                <div className="text-4xl font-headline font-bold text-primary mb-2">
+                  Democratic
+                </div>
+                <p className="text-muted-foreground">Upholding values</p>
+              </div>
+            </div>
+          </div>
         </article>
       </Layout>
     </>

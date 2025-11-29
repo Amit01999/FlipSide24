@@ -10,10 +10,12 @@ import {
   Linkedin,
   Copy,
   ArrowLeft,
+  Send,
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import NewsCard from '@/components/news/NewsCard';
 import TrendingSidebar from '@/components/news/TrendingSidebar';
+import TopPick from '@/components/news/TopPick';
 import {
   getArticleBySlug,
   sampleNews,
@@ -319,6 +321,33 @@ const Article = () => {
             {/* Sidebar */}
             <aside className="lg:col-span-4 space-y-8">
               <TrendingSidebar articles={trendingArticles} />
+
+              {/* Top Picks */}
+              <TopPick />
+
+              {/* Newsletter Subscription */}
+              <div className="bg-primary text-primary-foreground rounded-sm p-6 shadow-lg">
+                <h3 className="text-xl font-headline font-bold mb-2">
+                  Stay Informed
+                </h3>
+                <p className="text-primary-foreground/80 text-sm mb-4">
+                  Get breaking news alerts delivered straight to your inbox
+                </p>
+                <form className="space-y-3">
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    className="w-full px-4 py-2 bg-primary-foreground/10 border border-primary-foreground/30 rounded-sm text-primary-foreground placeholder:text-primary-foreground/50 focus:outline-none focus:border-primary-foreground transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full px-4 py-2 bg-foreground text-background font-semibold text-sm hover:bg-foreground/90 transition-colors rounded-sm flex items-center justify-center gap-2"
+                  >
+                    <Send className="h-4 w-4" />
+                    Subscribe Now
+                  </button>
+                </form>
+              </div>
 
               {/* Ad Space */}
               <div className="bg-muted rounded-sm p-8 text-center">
