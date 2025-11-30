@@ -4,6 +4,7 @@ import {
   Instagram,
   Youtube,
   Linkedin,
+  Twitter,
   Mail,
   Phone,
   MapPin,
@@ -13,6 +14,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { categories } from '@/data/sampleNews';
 import logo from '@/assets/logo.png';
+import x from '@/assets/X.png';
 
 const Footer = () => {
   return (
@@ -90,6 +92,18 @@ const Footer = () => {
                 className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="https://x.com/flipsidenews24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-white/10 rounded hover:bg-primary transition-colors"
+              >
+                <img
+                  src={x}
+                  alt="X (Twitter)"
+                  className="h-4 w-4 transition-transform hover:scale-110"
+                />
               </a>
             </div>
           </div>

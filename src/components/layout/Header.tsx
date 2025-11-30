@@ -8,6 +8,7 @@ import {
   Instagram,
   Youtube,
   Linkedin,
+  Twitter,
   Moon,
   Sun,
   ChevronDown,
@@ -24,6 +25,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import logo from '@/assets/logo.png';
+import x from '@/assets/X.png';
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -111,6 +113,15 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
                   className="hover:text-primary transition-colors"
                 >
                   <Linkedin className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="https://x.com/flipsidenews24"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  <img src={x} alt="X (Twitter)" className="h-4 w-4 transition-transform hover:scale-110" />
                 </a>
               </div>
               <button
