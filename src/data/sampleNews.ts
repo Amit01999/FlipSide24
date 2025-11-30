@@ -33,6 +33,8 @@ import img32 from '@/assets/BlogImage/32.png';
 import img33 from '@/assets/BlogImage/33.png';
 import img34 from '@/assets/BlogImage/34.jpg';
 import img35 from '@/assets/BlogImage/35.jpeg';
+import img36 from '@/assets/BlogImage/36.jpg';
+import img37 from '@/assets/BlogImage/37.jpeg';
 export interface NewsArticle {
   id: string;
   title: string;
@@ -432,7 +434,7 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-26T16:20:00Z',
     imageUrl: img12,
     isBreaking: false,
-    isFeatured: true,
+    isFeatured: false,
     isEditorPick: true,
     views: 56784,
     tags: [
@@ -1263,8 +1265,8 @@ export const sampleNews: NewsArticle[] = [
     publishedAt: '2025-11-29T21:30:00Z',
     imageUrl: img34,
     isBreaking: false,
-    isFeatured: true,
-    isHeroFeatured: true,
+    isFeatured: false,
+    isHeroFeatured: false,
     isEditorPick: true,
     views: 78945,
     tags: [
@@ -1316,6 +1318,91 @@ export const sampleNews: NewsArticle[] = [
       'Muhammad Yunus',
       'political sensitivity',
       'family statement',
+    ],
+  },
+  {
+    id: '36',
+    title:
+      'Khaleda Zia Speaks After Three Days of Silence, But Kidney Crisis Keeps Condition Grave',
+    slug: 'khaleda-zia-speaks-after-three-days-kidney-crisis-airlift-considered',
+    excerpt:
+      'BNP Chairperson Khaleda Zia, 80, briefly spoke with family yesterday after three days without response, showing marginal improvement from pneumonia and fluid buildup; however, severe kidney failure necessitates ongoing dialysis, with doctors eyeing airlift to London or Singapore if stable.',
+    content:
+      'BNP Chairperson Begum Khaleda Zia, who has been critically ill, spoke briefly yesterday after nearly three days without responding to voices, according to doctors at Evercare Hospital and family sources.\n\n' +
+      'Hospital sources confirmed that the former prime minister exchanged a few words in the morning with her daughter-in-law, Sharmin Rahman, wife of her late son Arafat Rahman Koko, while in the Coronary Care Unit (CCU).\n\n' +
+      'According to physicians, Khaleda Zia showed marginal improvement on Saturday compared to the preceding three days. However, her overall condition remains grave, largely due to severe deterioration of kidney function. She has undergone dialysis for four consecutive days.\n\n' +
+      'Doctors say the next few days will be extremely crucial. Without stabilising kidney function, no sustained improvement in her overall health is possible.\n\n' +
+      'Given the situation, a medical board comprising specialists from Bangladesh, Johns Hopkins Hospital in the US, and London Clinic has made a policy decision to consider flying her abroad for advanced treatment. The final decision depends on whether her body can withstand air travel.\n\n' +
+      'Sources said physicians will observe her for another day or two. If possible, she will be taken again to London Clinic, where she previously received treatment. If that proves too risky, Singapore’s Mount Elizabeth Hospital is being considered.\n\n' +
+      'However, BNP Secretary General Mirza Fakhrul Islam Alamgir said yesterday that her current condition does not allow any air travel.\n\n' +
+      'Due to rapidly declining kidney function, excessive fluid accumulated in her body—particularly in the lungs—causing acute breathing difficulties. She has been on continuous dialysis since Wednesday, though doctors struggled to manage fluid buildup. Her condition worsened to the point that, although conscious, she stopped responding.\n\n' +
+      'Some improvement was visible from Friday night, and she briefly spoke Saturday morning. She remained on dialysis throughout the day as doctors plan the next steps based on her response.\n\n' +
+      'Family sources said doctors view her ability to speak as a positive sign, though they warn the situation may change at any time.\n\n' +
+      'The 80-year-old leader has long been suffering from heart disease, diabetes, arthritis, liver cirrhosis and multiple complications involving the kidneys. She was rushed to Evercare Hospital last Sunday with severe respiratory distress and has remained in the CCU since then.\n\n' +
+      "Discussions about airlifting Khaleda Zia intensified Friday night. Yesterday, BNP Acting Chairman Tarique Rahman’s adviser Mahdi Amin wrote on Facebook that the family is preparing to take her to London via air ambulance once her condition improves. BNP insiders say this reflects the party leadership's intent.\n\n" +
+      'But Mirza Fakhrul dismissed the possibility for now, telling a press conference in Gulshan that despite completing all logistical preparations—including visas, communications with possible destination countries, and arranging an air ambulance—her physical condition is too fragile for travel.\n\n' +
+      'President Mohammed Shahabuddin yesterday urged the nation to pray for Khaleda Zia’s recovery. In a message issued through his assistant press secretary, the president said: “At this crucial moment in our democratic journey, I pray for the quick recovery of former prime minister Begum Khaleda Zia and call upon the nation to do the same.”\n\n' +
+      'Tarique Rahman has also expressed gratitude on behalf of the family for the outpouring of prayers and concern.\n\n' +
+      'Leaders from BNP and other political parties visited Evercare Hospital yesterday. Among them were leaders from the National Citizen Party (NCP), Bangladesh Khilafat Majlis Ameer Mawlana Mamunul Haque, and Hefazat-e-Islam’s top leadership, who also called for nationwide prayers.\n\n' +
+      'Crowds of BNP supporters gathered outside the hospital, holding banners and offering special prayers—creating traffic congestion in the area.\n\n' +
+      'BNP Secretary General Mirza Fakhrul urged all supporters to avoid gathering at the hospital. “Their presence is upsetting hospital authorities and causing disturbance for other patients,” he said. “We humbly request everyone not to crowd the hospital.”',
+    category: 'Politics',
+    subcategory: 'Politics',
+    author: 'Correspondent, Politics & Governance',
+    publishedAt: '2025-11-30T12:00:00Z',
+    imageUrl: img36,
+    isBreaking: true,
+    isFeatured: true,
+    isHeroFeatured: true,
+    isEditorPick: true,
+    views: 87654,
+    tags: [
+      'Khaleda Zia',
+      'BNP',
+      'health update',
+      'Evercare Hospital',
+      'kidney failure',
+      'dialysis',
+      'airlift abroad',
+      'Mirza Fakhrul',
+      'Tarique Rahman',
+      'interim government',
+    ],
+  },
+  {
+    id: '37',
+    title:
+      "Abhishek Sharma's Explosive 12-Ball Fifty and 32-Ball Hundred Powers Punjab to Massive Win",
+    slug: 'abhishek-sharma-12-ball-fifty-32-ball-hundred-syed-mushtaq-ali-trophy-punjab-bengal',
+    excerpt:
+      "Punjab opener Abhishek Sharma unleashed carnage in the Syed Mushtaq Ali Trophy, blasting a record 148 off 52 balls including 16 sixes against Bengal — his 12-ball fifty the third-fastest in T20 history and his 32-ball ton cementing his status as India's most destructive batter.",
+    content:
+      'Abhishek Sharma, who has brought a new dimension to India’s T20 batting in recent years, produced yet another explosive innings in the Syed Mushtaq Ali Trophy today.\n\n' +
+      'Playing for Punjab against Bengal, the left-hander smashed a blistering 50 off just 12 balls before reaching his hundred in only 32 deliveries.\n\n' +
+      'Batting at the top of the order at Hyderabad’s Gymkhana Ground, Abhishek tore into the Bengal bowlers from the first over. His first 12 balls included only one dot, five fours, five sixes and a single — 50 of his first 51 runs came in boundaries.\n\n' +
+      'The 12-ball fifty is the third-fastest in recognised T20 cricket, behind Nepal’s Dipendra Singh Airee (9 balls) and India’s Ashutosh Sharma (11 balls). Former India star Yuvraj Singh also once hit a 12-ball half-century.\n\n' +
+      'Although Abhishek looked on course to break the Indian record for the fastest T20 century — a mark he jointly holds for his 28-ball hundred against Meghalaya last year — he slowed down slightly in the second phase of his innings. His next 50 runs came off 20 balls, taking him to a 32-ball century.\n\n' +
+      'He eventually fell in the 18th over after scoring a stunning 148 off 52 balls, the second-highest T20 score by an Indian. He fell just short of Tilak Varma’s record of 151 off 67 balls (for Hyderabad in the 2024 season).\n\n' +
+      'But Abhishek still walked away with a major milestone. His 16 sixes in the match helped him set a new record for the most sixes by an Indian in a calendar year. With 91 sixes in 33 innings in 2025, he has already surpassed his own previous record of 87 sixes from 38 innings in 2024.\n\n' +
+      'Powered by his whirlwind knock, Punjab posted a massive 310 for 5 in 20 overs. Bengal, in reply, were restricted to 198 for 9, despite captain Abhimanyu Easwaran’s valiant unbeaten 130 off 66 balls.',
+    category: 'Sports',
+    subcategory: 'Sports',
+    author: 'Flipside Sports',
+    publishedAt: '2025-11-30T15:00:00Z',
+    imageUrl: img37,
+    isBreaking: true,
+    isFeatured: true,
+    isEditorPick: true,
+    views: 45678,
+    tags: [
+      'Abhishek Sharma',
+      'Syed Mushtaq Ali Trophy',
+      'Punjab cricket',
+      'Bengal cricket',
+      'T20 records',
+      'fastest fifty',
+      'sixes record',
+      'Indian cricket',
     ],
   },
 ];
